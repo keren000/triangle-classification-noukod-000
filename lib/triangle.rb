@@ -10,11 +10,11 @@ class Triangle
     if (@side1 == @side2 && @side2 == @side3 && @side1 == 0) || (@side1 + @side2 <= @side3) || (@side2 + @side3 <= @side1) || (@side1 + @side3 <= @side2)
       raise TriangleError
     elsif @side1 == @side2 && @side2 == @side3
-      return equilateral
+      :equilateral
     elsif @side2 == @side3 || @side1 == @side3 || @side1 == @side2
-      return isosceles
+      :isosceles
     else
-      return scalene
+      :scalene
     end
   end
 end
