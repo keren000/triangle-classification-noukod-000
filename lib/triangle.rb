@@ -1,4 +1,5 @@
 class Triangle
+  attr_accessor :side_1, 
   # write code here\
 
   def initialize(s1, s2, s3)
