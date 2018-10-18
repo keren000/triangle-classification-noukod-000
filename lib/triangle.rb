@@ -1,16 +1,16 @@
 class Triangle
   # write code here
    def initialize(side1, side2, side3)
-    @side_1 = side_1
-    @side_2 = side_2
-    @side_3 = side_3
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
   end
    def kind
-    if (@side_1 == @side_2 && @side_2 == @side_3 && @side_1 == 0) || (@side_1 + @side_2 <= @side_3) || (@side_2 + @side_3 <= @side_1) || (@side_1 + @side_3 <= @side_2)
+    if (@side1 == @side2 && @side2 == @side3 && @side1 == 0) || (@side1 + @side2 <= @side3) || (@side2 + @side3 <= @side1) || (@side1 + @side3 <= @side2)
       raise TriangleError
-    elsif @side_1 == @side_2 && @side_2 == @side_3
+    elsif @side1 == @side2 && @side2 == @side3
       :equilateral
-    elsif @side_2 == @side_3 || @side_1 == @side_3 || @side_1 == @side_2
+    elsif @side2 == @side3 || @side1 == @side3 || @side1 == @side2
       :isosceles
     else
       :scalene
@@ -18,4 +18,4 @@ class Triangle
   end
 end
  class TriangleError < StandardError
- end
+ end 
