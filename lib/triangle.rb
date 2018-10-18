@@ -12,9 +12,9 @@ class Triangle
     elsif @side1 == @side2 && @side2 == @side3
       return equilateral
     elsif @side2 == @side3 || @side1 == @side3 || @side1 == @side2
-      :isosceles
+      return isosceles
     else
-      :scalene
+      return scalene
     end
   end
 end
